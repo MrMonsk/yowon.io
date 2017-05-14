@@ -1,0 +1,1 @@
+web: node next build
