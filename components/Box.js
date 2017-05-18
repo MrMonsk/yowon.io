@@ -21,8 +21,8 @@ export default class extends Component {
                 <div className='box'
                     style = {
                         {
-                            height: '50vh',
-                            width: '50vw',
+                            height: '60vh',
+                            width: '60vw',
                             backgroundColor: '#f45c41',
                             display: 'flex',
                             alignItems: 'center',
