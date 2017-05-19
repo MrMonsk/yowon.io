@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Head from 'next/head';
 import Box from '../components/Box';
+import Link from 'next/link';
 
 export default class extends Component {
     constructor () {

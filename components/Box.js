@@ -21,21 +21,36 @@ export default class extends Component {
                 <div className='box'
                     style = {
                         {
-                            height: '60vh',
-                            width: '60vw',
-                            backgroundColor: '#f45c41',
+                            height: '70vh',
+                            width: '70vw',
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
-                            flexDirection: 'column'
+                            flexDirection: 'column',
                         }
                     }
                 >
+                    <style jsx>{`
+                        .box {
+                            background: linear-gradient(120deg, #f45c41, #9c41f4);
+                            background-size: 200% 200%;
+
+                            animation: transition 24s ease infinite;
+                            }
+
+                            @keyframes transition { 
+                                0%{background-position:0% 50%}
+                                50%{background-position:100% 50%}
+                                100%{background-position:0% 50%}
+                            }
+                        }
+                    `}</style>
                     <h1 style={{color: 'white' }}>{myName}</h1>
                     <p style={{color: 'white'}}>Dank memes and the 2K dream.</p>
                     <div className='icon-list' style={{color: 'white', display: 'flex', flexDirection: 'row'}}>
-                        <a style={{textDecoration: 'none', color: 'white', paddingRight: 10}} href="https://github.com/mrmonsk" target="_blank"><i className="fa fa-github-alt fa-2x" /></a>
-                        <a style={{textDecoration: 'none', color: 'white'}} href="mailto:yowonyoon@gmail.com?Subject=Hello"><i className="fa fa-envelope fa-2x" /></a>
+                        <a style={{textDecoration: 'none', color: 'white', paddingRight: 10}} href="https://github.com/mrmonsk" target="_blank" title="github"><i className="fa fa-github-alt fa-2x" /></a>
+                        <a style={{textDecoration: 'none', color: 'white', paddingRight: 10}} href="http://coda.yowonyoon.com" target="_blank" title="my blog"><i className="fa fa-rss fa-2x" /></a>
+                        <a style={{textDecoration: 'none', color: 'white', paddingRight: 10}} href="mailto:yowonyoon@gmail.com?Subject=Hello" title="email me"><i className="fa fa-envelope fa-2x" /></a>
                     </div>
                 </div>
             </div>
